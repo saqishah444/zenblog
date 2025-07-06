@@ -1,0 +1,193 @@
+:root {
+    --text-color: #465367;
+
+}
+
+.text-color {
+    color: #535353 !important;
+}
+
+
+body {
+    font-family: "EB Garamond", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    ;
+
+    h2:hover {
+        text-decoration: underline;
+    }
+
+    h3:hover {
+        text-decoration: underline;
+    }
+
+    h4:hover {
+        text-decoration: underline;
+    }
+
+    h1:hover {
+        text-decoration: underline;
+    }
+
+    h5:hover {
+        text-decoration: underline;
+    }
+}
+
+.navbar-brand {
+    font-style: none !important;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+header ul li a {
+    color: var(--text-color);
+}
+
+header ul li {
+    color: var(--text-color);
+    font-family: "Inter", sans-serif !important;
+    font-size: 14px;
+}
+
+header i {
+    color: var(--text-color);
+}
+
+#slider a {
+    color: white !important;
+
+    h2 {
+        font-weight: 700;
+    }
+
+    p {
+        font-weight: 400;
+    }
+
+}
+
+#slider button {
+    color: white !important;
+}
+
+#trending {
+    margin-top: 20px;
+}
+
+.date {
+    font-size: 11px !important;
+}
+
+.person-img {
+    width: 40px;
+    height: 40px;
+}
+
+.trending-border {
+    border: 1px solid rgb(230, 227, 227);
+
+
+}
+
+.trending-border1 {
+    border: 1px solid rgb(230, 227, 227);
+    border-top: none;
+}
+
+.trending-counting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -30px;
+
+}
+
+.trending-counting p {
+    font-size: 90px;
+    opacity: 0.10;
+}
+
+.trending-side2 {
+    border-left: 1px solid rgb(230, 227, 227);
+
+}
+
+#footer {
+    background-color: black;
+
+    .py-1 a:hover {
+        color: #2a3342 !important;
+    }
+
+    .py-1 a {
+        color: #9c9999 !important;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+    }
+    h3:hover a{
+        text-decoration: none !important;
+    }
+}
+
+.foooter-text {
+    h3 a {
+        color: white !important;
+    }
+
+    h5 {
+        color: white !important;
+    }
+
+    i {
+        color: white !important;
+    }
+
+    p {
+        color: white !important;
+    }
+
+    ul li a {
+        color: white !important;
+
+    }
+
+    h3:hover {
+        text-decoration: none !important;
+    }
+    h5:hover {
+        text-decoration: none !important;
+    }
+}
+.white-color{
+    color: white !important;
+}
+.ul-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+#footer hr{
+    color: aliceblue;
+}
+.icons{
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    transition: all .3s ease;
+}
+.icon-hover:hover i {
+    color: #2a3342 !important;
+    border: 1px solid #2a3342;
+}
