@@ -1,12 +1,904 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zenblog</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/zenblog-favicon.png" type="image/x-icon">
 </head>
+
 <body>
-    <h1>saqib shah</h1>
-    
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg bg-secondary-subtle">
+            <div class="container">
+                <a class="navbar-brand fs-2" href="#">ZenBlog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Single Post</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href=""><i class="ri-twitter-x-line fs-5"></i></a>
+                        <a href=""><i class="ri-facebook-circle-fill fs-5"></i></a>
+                        <a href=""><i class="ri-instagram-line fs-5"></i></a>
+                        <a href=""><i class="ri-linkedin-box-fill fs-5"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="slider" class="mt-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                            data-bs-ride="true" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            data-bs-ride="true" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            data-bs-ride="true" aria-label="Slide 3"></button>
+                    </div>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" aria-label="true"
+                        data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="./assets/images/post-slide-1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-flex text-start d-none d-md-block">
+                                    <a href="">
+                                        <h2 class="fw-bold">The Best Homemade Masks for <br /> Face (keep the Pimples
+                                            Away)</h2>
+                                        <p class="fs-5">Some representative placeholder content for the first
+                                            slide.<br />
+                                            Some representative placeholder content.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assets/images/post-slide-3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-flex text-start  d-none d-md-block">
+                                    <a href="">
+                                        <h2>The Best Homemade Masks for <br /> Face (keep the Pimples Away)</h2>
+                                        <p class="fs-5 ">Some representative placeholder content for the first
+                                            slide.<br />
+                                            Some representative placeholder content.</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/images/post-slide-4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-flex text-start  d-none d-md-block">
+                                    <a href="">
+                                        <h2>The Best Homemade Masks for <br /> Face (keep the Pimples Away)</h2>
+                                        <p class="fs-5">Some representative placeholder content for the first
+                                            slide.<br />
+                                            Some representative placeholder content.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="trending" class="mt-5 px-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="px-3">
+                            <div><img src="./assets/images/post-landscape-1.jpg" class="img-fluid" alt="" srcset="">
+                            </div>
+                            <p class="opacity-75  date text-uppercase mt-4"><span>trending</span> <span
+                                    class="mx-1">•</span> Jul 5th '22</p>
+                            <div>
+                                <h2 class="fw-bold text-color">11 Work From Home Part-Time Jobs You Can Do Now</h2>
+                                <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                                    temporibus
+                                    repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil
+                                    tempore odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe
+                                    perspiciatis officia nemo, eos quae cumque. Accusamus fugiat architecto rerum animi
+                                    atque eveniet, quo, praesentium dignissimos</p>
+                                <div class="d-flex gap-2 mb-3 align-items-center ">
+                                    <div><img src="./assets/images/person-1.jpg"
+                                            class="img-fluid rounded-circle person-img" alt="" srcset=""></div>
+                                    <div class=" ">
+                                        <h6 class="m-0 p-0">Cameron Williamson</h6>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row g-5">
+                            <div class="col-lg-4 trending-side2">
+                                <div class="">
+                                    <div><img src="./assets/images/post-landscape-2.jpg" class="img-fluid" alt=""
+                                            srcset=""></div>
+                                    <p class="opacity-75 date text-uppercase mt-3"><span>trending</span> <span
+                                            class="mx-1">•</span> Jul 5th '22</p>
+                                    <h5 class="fw-bold text-color">Let’s Get Back to Work, New York</h5>
+                                    <div class="mt-3">
+                                        <img src="./assets/images/post-landscape-3.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3"><span>trending</span>
+                                            <span class="mx-1">•</span> Jul 5th '22
+                                        </p>
+                                        <h5 class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                            Video Calls?</h5>
+
+                                    </div>
+                                    <div class="mt-3">
+                                        <img src="./assets/images/post-landscape-5.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3"><span>trending</span> <span
+                                                class="mx-1">•</span> Jul 5th '22</p>
+                                        <h5 class="fw-bold text-color">Why Craigslist Tampa Is One of The Most
+                                            Interesting Places On the Web?</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 trending-side2">
+                                <div>
+                                    <div><img src="./assets/images/post-landscape-6.jpg" class="img-fluid" alt=""
+                                            srcset=""></div>
+                                    <p class="opacity-75 date text-uppercase mt-3"><span>trending</span> <span
+                                            class="mx-1">•</span> Jul 5th '22</p>
+                                    <h5 class="fw-bold text-color">6 Easy Steps To Create Your Own Cute Merch For
+                                        Instagram</h5>
+                                    <div class="mt-3">
+                                        <img src="./assets/images/post-landscape-8.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3"><span>trending</span>
+                                            <span class="mx-1">•</span> Jul 5th '22
+                                        </p>
+                                        <h5 class="fw-bold text-color">10 Life-Changing Hacks Every Working Mom Should
+                                            Know</h5>
+
+                                    </div>
+                                    <div class="mt-3">
+                                        <img src="./assets/images/post-landscape-7.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3"><span>trending</span> <span
+                                                class="mx-1">•</span> Jul 5th '22</p>
+                                        <h5 class="fw-bold text-color">5 Great Startup Tips for Female Founders</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div>
+                                    <div class="trending-border align-text-center">
+                                        <p class="fs-2 ps-3">
+                                            Trending
+                                        </p>
+                                    </div>
+                                    <div class="position-relative p-3 trending-border1">
+                                        <div class="trending-counting">
+
+                                            <p class="">1</p>
+
+                                        </div>
+                                        <h5 class="fw-bold text-color">
+                                            The Best Homemade Masks for Face (keep the Pimples Away)
+                                        </h5>
+                                        <p class="opacity-75 ">Jane Cooper</p>
+
+
+
+                                    </div>
+                                    <div class="position-relative p-3 trending-border1">
+                                        <div class="trending-counting">
+
+                                            <p class="">2</p>
+
+                                        </div>
+                                        <h5 class="fw-bold text-color">
+                                            The Best Homemade Masks for Face (keep the Pimples Away)
+                                        </h5>
+                                        <p class="opacity-75 ">Jane Cooper</p>
+
+
+
+                                    </div>
+                                    <div class="position-relative p-3 trending-border1">
+                                        <div class="trending-counting">
+
+                                            <p class="">3</p>
+
+                                        </div>
+                                        <h5 class="fw-bold text-color">
+                                            The Best Homemade Masks for Face
+                                        </h5>
+                                        <p class="opacity-75 ">Jane Cooper</p>
+
+
+
+                                    </div>
+                                    <div class="position-relative p-3 trending-border1">
+                                        <div class="trending-counting">
+
+                                            <p class="">4</p>
+
+                                        </div>
+                                        <h5 class="fw-bold text-color">
+                                            The Best Homemade Masks for Face (keep the Pimples Away)
+                                        </h5>
+                                        <p class="opacity-75 ">Jane Cooper</p>
+
+
+
+                                    </div>
+                                    <div class="position-relative p-3 trending-border1">
+                                        <div class="trending-counting">
+
+                                            <p class="">5</p>
+
+                                        </div>
+                                        <h5 class="fw-bold text-color">
+                                            The Best Homemade Masks for Face (keep the Pimples Away)
+                                        </h5>
+                                        <p class="opacity-75 ">Jane Cooper</p>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="culture " class="mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center border-black border-bottom border-2">
+                    <div>
+                        <h1>Culture</h1>
+                    </div>
+                    <div class="">
+                        <p class="border-bottom border-1 border-black  fs-6  m-0 p-0"><a href="" class="text-color">SEE
+                                ALL CULTURE</a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div>
+                                <div class="row mt-5">
+                                    <div class="col-lg-8">
+                                        <div>
+                                            <img src="./assets/images/post-landscape-6.jpg" class="img-fluid" alt=""
+                                                srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div>
+                                            <p class="opacity-75 date text-uppercase mt-3">
+                                                <span>culture</span>
+                                                <span class="mx-1">•</span> Jul 5th '22
+                                            </p>
+                                            <h4>
+                                                <a href="" class="color-black fw-bold text-color">
+                                                    What is the son of Football Coach John Gruden, Deuce Gruden doing
+                                                    Now?
+                                                </a>
+                                            </h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                                placeat exercitationem magni voluptates dolore. Tenetur fugiat
+                                                voluptates quas, nobis error deserunt aliquam temporibus sapiente,
+                                                laudantium dolorum itaque libero eos deleniti?</p>
+                                            <div class="d-flex gap-2 mt-3 align-items-center ">
+                                                <div><img src="./assets/images/person-1.jpg"
+                                                        class="img-fluid rounded-circle person-img" alt="" srcset="">
+                                                </div>
+                                                <div class=" ">
+                                                    <h6 class="m-0 p-0">Cameron Williamson</h6>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-lg-4">
+                                        <div>
+                                            <img src="./assets/images/post-landscape-1.jpg" class="img-fluid" alt=""
+                                                srcset="">
+                                            <p class="opacity-75 date text-uppercase mt-3">
+                                                <span>culture</span>
+                                                <span class="mx-1">•</span> Jul 5th '22
+                                            </p>
+                                            <a href="">
+                                                <h5 class="fw-bold text-color">
+                                                    11 Work From Home Part-Time Jobs You Can Do Now
+                                                </h5>
+                                            </a>
+                                            <p>Jenny Wilson</p>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus
+                                                repudiandae, inventore pariatur numquam cumque possimus</p>
+                                            <hr>
+                                            <p class="opacity-75 date text-uppercase mt-3">
+                                                <span>culture</span>
+                                                <span class="mx-1">•</span> Jul 5th '22
+                                            </p>
+                                            <a href="">
+                                                <h5 class="fw-bold text-color">5 Great Startup Tips for Female Founders
+                                                </h5>
+                                            </a>
+                                            <p>Jenny Wilson</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div>
+                                            <div><img src="./assets/images/post-landscape-2.jpg" class="img-fluid"
+                                                    alt="" srcset=""></div>
+                                            <p class="opacity-75  date text-uppercase mt-3">
+                                                <span>culture</span>
+                                                <span class="mx-1">•</span> Jul 5th '22
+                                            </p>
+                                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay
+                                                    Focused During Video
+                                                    Calls?</a></h5>
+                                            <p>Jenny Wilson</p>
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus
+                                                repudiandae, inventore pariatur numquam cumque possimus</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mt-4">
+                            <div>
+                                <p class="opacity-75 date text-uppercase mt-3">
+                                    <span>culture</span>
+                                    <span class="mx-1">•</span> Jul 5th '22
+                                </p>
+                                <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                        During Video Calls?</a></h5>
+                                <p>Jenny Wilson</p>
+                                <hr>
+                                <p class="opacity-75  date text-uppercase mt-3">
+                                    <span>culture</span>
+                                    <span class="mx-1">•</span> Jul 5th '22
+                                </p>
+                                <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                        During Video Calls?</a></h5>
+                                <p>Jenny Wilson</p>
+                                <hr>
+                                <p class="opacity-75 date text-uppercase mt-3">
+                                    <span>culture</span>
+                                    <span class="mx-1">•</span> Jul 5th '22
+                                </p>
+                                <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                        During Video Calls?</a></h5>
+                                <p>Jenny Wilson</p>
+                                <hr>
+                                <p class="opacity-75  date text-uppercase mt-3">
+                                    <span>culture</span>
+                                    <span class="mx-1">•</span> Jul 5th '22
+                                </p>
+                                <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                        During Video Calls?</a></h5>
+                                <p>Jenny Wilson</p>
+                                <hr>
+                                <p class="opacity-75  date text-uppercase mt-3">
+                                    <span>culture</span>
+                                    <span class="mx-1">•</span> Jul 5th '22
+                                </p>
+                                <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                        During Video Calls?</a></h5>
+                                <p>Jenny Wilson</p>
+                                <hr>
+                                <p class="opacity-75  date text-uppercase mt-3">
+                                    <span>culture</span>
+                                    <span class="mx-1">•</span> Jul 5th '22
+                                </p>
+                                <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                        During Video Calls?</a></h5>
+                                <p>Jenny Wilson</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="business" class="mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center border-black border-bottom border-2">
+                    <div>
+                        <h1 class="fw-bold text-color">Business</h1>
+                    </div>
+                    <div class="">
+                        <p class="border-bottom border-1 border-black  fs-6  m-0 p-0"><a href="" class="text-color">SEE
+                                ALL BUSINESS</a></p>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-3 mt-4">
+                        <div>
+                            <p class="opacity-75 date text-uppercase mt-3">
+                                <span>business</span>
+                                <span class="mx-1">•</span> Jul 5th '22
+                            </p>
+                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                    Video Calls?</a></h5>
+                            <p>Jenny Wilson</p>
+                            <hr>
+                            <p class="opacity-75  date text-uppercase mt-3">
+                                <span>business</span>
+                                <span class="mx-1">•</span> Jul 5th '22
+                            </p>
+                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                    Video Calls?</a></h5>
+                            <p>Jenny Wilson</p>
+                            <hr>
+                            <p class="opacity-75 date text-uppercase mt-3">
+                                <span>business</span>
+                                <span class="mx-1">•</span> Jul 5th '22
+                            </p>
+                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                    Video Calls?</a></h5>
+                            <p>Jenny Wilson</p>
+                            <hr>
+                            <p class="opacity-75  date text-uppercase mt-3">
+                                <span>business</span>
+                                <span class="mx-1">•</span> Jul 5th '22
+                            </p>
+                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                    Video Calls?</a></h5>
+                            <p>Jenny Wilson</p>
+                            <hr>
+                            <p class="opacity-75  date text-uppercase mt-3">
+                                <span>business</span>
+                                <span class="mx-1">•</span> Jul 5th '22
+                            </p>
+                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                    Video Calls?</a></h5>
+                            <p>Jenny Wilson</p>
+                            <hr>
+                            <p class="opacity-75  date text-uppercase mt-3">
+                                <span>business</span>
+                                <span class="mx-1">•</span> Jul 5th '22
+                            </p>
+                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                    Video Calls?</a></h5>
+                            <p>Jenny Wilson</p>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div>
+                            <div class="row mt-5">
+                                <div class="col-lg-8">
+                                    <div>
+                                        <img src="./assets/images/post-landscape-6.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div>
+                                        <p class="opacity-75 date text-uppercase ">
+                                            <span>business</span>
+                                            <span class="mx-1">•</span> Jul 5th '22
+                                        </p>
+                                        <h4>
+                                            <a href="" class=" fw-bold text-color">
+                                                What is the son of Football Coach John Gruden, Deuce Gruden doing
+                                                Now?
+                                            </a>
+                                        </h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                                            placeat exercitationem magni voluptates dolore. Tenetur fugiat
+                                            voluptates quas, nobis error deserunt aliquam temporibus sapiente,
+                                            laudantium dolorum itaque libero eos deleniti?</p>
+                                        <div class="d-flex gap-2 mt-3 align-items-center ">
+                                            <div><img src="./assets/images/person-1.jpg"
+                                                    class="img-fluid rounded-circle person-img" alt="" srcset="">
+                                            </div>
+                                            <div class=" ">
+                                                <h6 class="m-0 p-0">Cameron Williamson</h6>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-lg-4">
+                                    <div>
+                                        <img src="./assets/images/post-landscape-1.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3">
+                                            <span>business</span>
+                                            <span class="mx-1">•</span> Jul 5th '22
+                                        </p>
+                                        <a href="">
+                                            <h5 class="fw-bold text-color">
+                                                11 Work From Home Part-Time Jobs You Can Do Now
+                                            </h5>
+                                        </a>
+                                        <p>Jenny Wilson</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus
+                                            repudiandae, inventore pariatur numquam cumque possimus</p>
+                                        <hr>
+                                        <p class="opacity-75 date text-uppercase mt-3">
+                                            <span>business</span>
+                                            <span class="mx-1">•</span> Jul 5th '22
+                                        </p>
+                                        <a href="">
+                                            <h5 class="fw-bold text-color">5 Great Startup Tips for Female Founders</h5>
+                                        </a>
+                                        <p>Jenny Wilson</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div>
+                                        <div><img src="./assets/images/post-landscape-2.jpg" class="img-fluid" alt=""
+                                                srcset=""></div>
+                                        <p class="opacity-75  date text-uppercase mt-3">
+                                            <span>business</span>
+                                            <span class="mx-1">•</span> Jul 5th '22
+                                        </p>
+                                        <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay
+                                                Focused During Video
+                                                Calls?</a></h5>
+                                        <p>Jenny Wilson</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero temporibus
+                                            repudiandae, inventore pariatur numquam cumque possimus</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="lifestyle" class="mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center border-black border-bottom border-2">
+                    <div>
+                        <h1 class="fw-bold text-color">Lifestyle</h1>
+                    </div>
+                    <div class="">
+                        <p class="border-bottom border-1 border-black  fs-6  m-0 p-0"><a href="" class="text-color">SEE
+                                ALL LIFESTYLE</a></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4">
+                        <div class="px-3">
+                            <div><img src="./assets/images/post-landscape-1.jpg" class="img-fluid" alt="" srcset="">
+                            </div>
+                            <p class="opacity-75 date text-uppercase mt-4"><span>Lifestyle</span> <span
+                                    class="mx-1">•</span> Jul 5th '22</p>
+                            <div>
+                                <h2 class="fw-bold text-color">11 Work From Home Part-Time Jobs You Can Do Now</h2>
+                                <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                                    temporibus
+                                    repudiandae, inventore pariatur numquam cumque possimus exercitationem? Nihil
+                                    tempore odit ab minus eveniet praesentium, similique blanditiis molestiae ut saepe
+                                    perspiciatis officia nemo, eos quae cumque. Accusamus fugiat architecto rerum animi
+                                    atque eveniet, quo, praesentium dignissimos</p>
+                                <div class="d-flex gap-2 mb-3 align-items-center ">
+                                    <div><img src="./assets/images/person-1.jpg"
+                                            class="img-fluid rounded-circle person-img" alt="" srcset=""></div>
+                                    <div class=" ">
+                                        <h6 class="m-0 p-0">Cameron Williamson</h6>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <p class="opacity-75  date text-uppercase mt-4">
+                                <span>Lifestyle</span>
+                                <span class="mx-1">•</span> Jul 5th '22
+                            </p>
+                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                    Video Calls?</a>
+                            </h5>
+                            <p>Jenny Wilson</p>
+                            <hr>
+                            <p class="opacity-75  date text-uppercase mt-3">
+                                <span>Lifestyle</span>
+                                <span class="mx-1">•</span> Jul 5th '22
+                            </p>
+                            <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                    Video Calls?</a>
+                            </h5>
+                            <p>Jenny Wilson</p>
+                            <hr>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row g-5">
+                            <div class="col-lg-4 trending-side2">
+                                <div class="">
+                                    <div><img src="./assets/images/post-landscape-2.jpg" class="img-fluid" alt=""
+                                            srcset=""></div>
+                                    <p class="opacity-75 date text-uppercase mt-3"><span>Lifestyle</span> <span
+                                            class="mx-1">•</span> Jul 5th '22</p>
+                                    <h5 class="fw-bold text-color">Let’s Get Back to Work, New York</h5>
+                                    <div class="mt-3">
+                                        <img src="./assets/images/post-landscape-3.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3"><span>Lifestyle</span>
+                                            <span class="mx-1">•</span> Jul 5th '22
+                                        </p>
+                                        <h5 class="fw-bold text-color">How to Avoid Distraction and Stay Focused During
+                                            Video Calls?</h5>
+
+                                    </div>
+                                    <div class="mt-3">
+                                        <img src="./assets/images/post-landscape-5.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3"><span>lifestyle</span> <span
+                                                class="mx-1">•</span> Jul 5th '22</p>
+                                        <h5 class="fw-bold text-color">Why Craigslist Tampa Is One of The Most
+                                            Interesting Places On the Web?</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 trending-side2">
+                                <div>
+                                    <div><img src="./assets/images/post-landscape-6.jpg" class="img-fluid" alt=""
+                                            srcset=""></div>
+                                    <p class="opacity-75 date text-uppercase mt-3"><span>Lifestyle</span> <span
+                                            class="mx-1">•</span> Jul 5th '22</p>
+                                    <h5 class="fw-bold text-color">6 Easy Steps To Create Your Own Cute Merch For
+                                        Instagram</h5>
+                                    <div class="mt-3">
+                                        <img src="./assets/images/post-landscape-8.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3"><span>Lifestyle</span>
+                                            <span class="mx-1">•</span> Jul 5th '22
+                                        </p>
+                                        <h5 class="fw-bold text-color">10 Life-Changing Hacks Every Working Mom Should
+                                            Know</h5>
+
+                                    </div>
+                                    <div class="mt-3">
+                                        <img src="./assets/images/post-landscape-7.jpg" class="img-fluid" alt=""
+                                            srcset="">
+                                        <p class="opacity-75 date text-uppercase mt-3"><span>lifestyle</span> <span
+                                                class="mx-1">•</span> Jul 5th '22</p>
+                                        <h5 class="fw-bold text-color">5 Great Startup Tips for Female Founders</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div>
+                                    <p class="opacity-75 date text-uppercase mt-3">
+                                        <span>Lifestyle</span>
+                                        <span class="mx-1">•</span> Jul 5th '22
+                                    </p>
+                                    <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                            During Video Calls?</a>
+                                    </h5>
+                                    <p>Jenny Wilson</p>
+                                    <hr>
+                                    <p class="opacity-75  date text-uppercase mt-3">
+                                        <span>Lifestyle</span>
+                                        <span class="mx-1">•</span> Jul 5th '22
+                                    </p>
+                                    <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                            During Video Calls?</a>
+                                    </h5>
+                                    <p>Jenny Wilson</p>
+                                    <hr>
+                                    <p class="opacity-75 date text-uppercase mt-3">
+                                        <span>Lifestyle</span>
+                                        <span class="mx-1">•</span> Jul 5th '22
+                                    </p>
+                                    <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                            During Video Calls?</a>
+                                    </h5>
+                                    <p>Jenny Wilson</p>
+                                    <hr>
+                                    <p class="opacity-75  date text-uppercase mt-3">
+                                        <span>Lifestyle</span>
+                                        <span class="mx-1">•</span> Jul 5th '22
+                                    </p>
+                                    <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                            During Video Calls?</a>
+                                    </h5>
+                                    <p>Jenny Wilson</p>
+                                    <hr>
+                                    <p class="opacity-75  date text-uppercase mt-3">
+                                        <span>Lifestyle</span>
+                                        <span class="mx-1">•</span> Jul 5th '22
+                                    </p>
+                                    <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                            During Video Calls?</a>
+                                    </h5>
+                                    <p>Jenny Wilson</p>
+                                    <hr>
+                                    <p class="opacity-75  date text-uppercase mt-3">
+                                        <span>Lifestyle</span>
+                                        <span class="mx-1">•</span> Jul 5th '22
+                                    </p>
+                                    <h5><a href="" class="fw-bold text-color">How to Avoid Distraction and Stay Focused
+                                            During Video Calls?</a>
+                                    </h5>
+                                    <p>Jenny Wilson</p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="pt-5 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="foooter-text">
+                            <h3 class="foooter-text">
+                                <a href="" class="fw-bold foooter-text">ZenBlog</a>
+                            </h3>
+                            <p class="foooter-text">A108 Adam Street <br />
+
+                                New York, NY 535022
+
+                            </p>
+                            <p class="foooter-text"><span class="fw-bold">Phone:</span> +1 5589 55488 55 <br />
+                                <span class="fw-bold">Email:</span> info@example.com
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a href="" class="icon-hover"><i class="ri-twitter-x-line fs-5 icons"></i></a>
+                                <a href="" class="icon-hover"><i class="ri-facebook-circle-fill fs-5 icons"></i></a>
+                                <a href="" class="icon-hover"><i class="ri-instagram-line fs-5 icons"></i></a>
+                                <a href="" class="icon-hover"><i class="ri-linkedin-box-fill fs-5 icons"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2">
+                        <div class="foooter-text ul-flex">
+                            <h5>Useful Links</h5>
+                            <div class="ul-flex">
+                                <div class="py-1"><a href="">Home</a></div>
+                                <div class="py-1"><a href="">About</a></div>
+                                <div class="py-1"><a href="">Services</a></div>
+                                <div class="py-1"><a href="">Terms of services</a></div>
+                                <div class="py-1"><a href="">Privacy policy</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2">
+                        <div class="foooter-text">
+                            <h5>Our Services</h5>
+                            <div class="d-flex flex-column ">
+                                <div class="py-1"><a href="">Web Design</a></div>
+                                <div class="py-1"><a href="">Web Development</a></div>
+                                <div class="py-1"><a href="">Product Management</a></div>
+                                <div class="py-1"><a href="">Marketing</a></div>
+                                <div class="py-1"><a href="">Graphic Design</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-2">
+                        <div class="foooter-text">
+                            <h5>Hic solutasetp</h5>
+                            <div class="d-flex flex-column ">
+                                <div class="py-1"><a href="">Molestiae </a></div>
+                                <div class="py-1"><a href="">Excepturi </a></div>
+                                <div class="py-1"><a href="">Suscipit </a></div>
+                                <div class="py-1"><a href="">Dilecta</a></div>
+                                <div class="py-1"><a href="">Sit quas </a></div>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-3 col-lg-2">
+                        <div class="foooter-text">
+                            <h5>Nobis illum</h5>
+                            <div class="d-flex flex-column ">
+                                <div class="py-1"><a href="">Ipsam</a></div>
+                                <div class="py-1"><a href="">Laudantium dolorum</a></div>
+                                <div class="py-1"><a href="">Dinera</a></div>
+                                <div class="py-1"><a href="">Trodelas</a></div>
+                                <div class="py-1"><a href="">Flexo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center white-color pb-3">
+                    <p>© Copyright <span class="fw-bold">ZenBlog</span> All Rights Reserved<br />
+                        Designed by BootstrapMade Distributed by ThemeWagon</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>
